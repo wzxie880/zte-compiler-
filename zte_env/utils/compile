@@ -1,0 +1,4 @@
+#~/development/clang-10.0.0.src/build/bin/clang -c xcustom.cpp --static -I. --gcc-toolchain=/apps/EDAs/chipyard/riscv-tools-install/riscv64-unknown-linux-gnu --sysroot=/apps/EDAs/chipyard/riscv-tools-install/sysroot -mabi=lp64
+clang -c xcustom.cpp -march=rv64i -mabi=lp64 -O3 -S -emit-llvm -o xcustom.ll
+
+#--gcc-toolchain=/apps/EDAs/chipyard/riscv-tools-install/riscv64-unknown-linux-gnu --sysroot=/apps/EDAs/chipyard/riscv-tools-install/sysroot  -O3 -S -emit-llvm -o xcustom.ll
